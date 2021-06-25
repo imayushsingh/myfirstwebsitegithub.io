@@ -1,0 +1,112 @@
+/* ---------------------------------------------------------------------------------------- FONTS */
+
+body {font-family: "Gotham SSm A", "Gotham SSm B";}
+
+#content-body h1 {
+  font-family: "Gotham SSm A", "Gotham SSm B";
+  font-size: 40px !important;
+  font-weight: 100;
+  line-height: 50px;
+  letter-spacing: -0.02em;
+}
+
+#content-body h2 {
+  font-family: "Gotham SSm A", "Gotham SSm B";
+  font-size: 32px !important;
+  font-weight: 700;
+  display: block;
+  margin: 30px 0px 20px;
+  line-height: 40px;
+}
+
+#content-body h3, #content-body h2.tileHeadline {
+  font-family: "Gotham SSm A", "Gotham SSm B";
+  font-size: 25px !important;;
+  margin: 30px 0px 10px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #666
+}
+
+#content-body h4 {
+  font-family: "Gotham SSm A", "Gotham SSm B";
+}
+
+#content-body p, #content-body li {
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  font-weight: 300;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  #content-body h1 {font-size: 30px !important; line-height: 40px;}
+  #content-body h2 {font-size: 20px !important; line-height: 30px;}
+}
+
+i, em {font-weight: 400;}
+
+.mercury {
+	font-family: "Mercury SSm A", "Mercury SSm B";
+	font-style: italic;
+	letter-spacing: normal;
+}
+
+/* ---------------------------------------------------------------------------------------- MARKETING TEMPLATE MODS */
+
+html,body {width: 100%;margin: 0px;padding: 0px;overflow-x: hidden;}
+
+body {
+    background-image: url('/artsandsciences/images/background.png');
+    background-position: 0 -80px
+}
+
+#breadcrumbs, #document-description, #social-counters
+{display: none !important;}
+
+#navbar {background-color: #fff}
+
+#core-content, #marketing_banners {margin-top: 25px}
+
+#core-content > div > div {border-top: 0px solid #AD0000;}
+
+#core-content .main-content, #core-content .sidebar, #social-counters {
+    background-color: #fff;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#content-body {background: #fff}
+
+.main-content .left-nav {margin: 50px 0 0 20px;} /* adjusts margins of navigation */
+
+ul.left-nav {margin: 0 0 10px 0px;} /* removes left indentation from navigation list */
+
+.left-nav li.nav-link {padding: 10px 10px; margin-bottom:0px; border-bottom: 1px dotted #ccc}
+.left-nav li.nav-link:hover {background-color: #eee;}
+.left-nav li.nav-link a:hover {text-decoration: none}
+
+.nav-header {padding-left: 0px;} /* removes left indentation navigation header */
+
+.uofl-navbar #nav-main .nav > li {margin-right: 22px;} /* less space between main nav items */
+.uofl-navbar #nav-main .nav > li:last-child {margin-right: 0px !important;} /* removes right margin for last nav item */
+
+@media (max-width: 767px) {
+  #lowerbar, #navbar, #core-content {padding: 0 .2em;} /* removes extra left/right padding at mobile resolution */
+
+  #core-content {margin-top: 0px; padding: 0px}
+
+  #core-content .main-content, #core-content .sidebar, #social-counters {
+    -webkit-box-shadow: none;
+    -moz-box-shadow:none;
+    box-shadow: none;
+}
+
+  ul.left-nav {margin: 0 0 10px 20px;} /* restores some left padding for navigation after above action */
+
+  div#content-wrapper.span9::after {display: none} /* eliminates unneccessary shadow below content area at mobile rez */
+
+  .phone_nav::after {display: none}
+}
